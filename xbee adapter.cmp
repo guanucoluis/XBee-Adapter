@@ -1,0 +1,87 @@
+Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 17/07/2013 19:13:13
+
+BeginCmp
+TimeStamp = /51DDE12A;
+Reference = C1;
+ValeurCmp = CP1;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DDE126;
+Reference = C2;
+ValeurCmp = CP1;
+IdModule  = C1;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E1604F;
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E160E5;
+Reference = D2;
+ValeurCmp = LED;
+IdModule  = LED-1206;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DDDCC4;
+Reference = P1;
+ValeurCmp = CONN_10;
+IdModule  = SIL-10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DDDCB3;
+Reference = P2;
+ValeurCmp = CONN_10;
+IdModule  = SIL-10;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DDDBEE;
+Reference = R1;
+ValeurCmp = 9k;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DDDBD0;
+Reference = R2;
+ValeurCmp = 16,87k;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E1606B;
+Reference = R3;
+ValeurCmp = 250;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /51E160E4;
+Reference = R4;
+ValeurCmp = 250;
+IdModule  = R4-LARGE_PADS;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DDED67;
+Reference = U1;
+ValeurCmp = LM1117-3.3;
+IdModule  = SOT223;
+EndCmp
+
+BeginCmp
+TimeStamp = /51DDD408;
+Reference = U2;
+ValeurCmp = XBEE;
+IdModule  = XBee;
+EndCmp
+
+EndListe
