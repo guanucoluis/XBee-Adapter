@@ -1,6 +1,6 @@
-update=mar 15 sep 2015 23:37:51 ART
+update=jue 17 sep 2015 22:58:51 ART
 version=1
-last_client=pcbnew
+last_client=eeschema
 [general]
 version=1
 [cvpcb]
@@ -8,6 +8,39 @@ version=1
 NetIExt=net
 [cvpcb/libraries]
 EquName1=devcms
+[pcbnew]
+version=1
+LastNetListRead=xbee adapter.net
+UseCmpFile=1
+PadDrill=0.812800000000
+PadDrillOvalY=0.812800000000
+PadSizeH=1.524000000000
+PadSizeV=1.524000000000
+PcbTextSizeV=2.032000000000
+PcbTextSizeH=1.524000000000
+PcbTextThickness=0.304800000000
+ModuleTextSizeV=1.524000000000
+ModuleTextSizeH=1.524000000000
+ModuleTextSizeThickness=0.304800000000
+SolderMaskClearance=0.254000000000
+SolderMaskMinWidth=0.000000000000
+DrawSegmentWidth=0.381000000000
+BoardOutlineThickness=0.381000000000
+ModuleOutlineThickness=0.381000000000
+[pcbnew/libraries]
+LibDir=
+LibName1=sockets
+LibName2=connect
+LibName3=discret
+LibName4=pin_array
+LibName5=divers
+LibName6=libcms
+LibName7=display
+LibName8=valves
+LibName9=led
+LibName10=dip_sockets
+LibName11=xbee_lib/XBee/XBee
+LibName12=xbee_lib/eLab Logo/elab_kicad
 [eeschema]
 version=1
 LibDir=xbee_lib/module_droids
@@ -49,36 +82,3 @@ LibName29=contrib
 LibName30=valves
 LibName31=modules_droids
 LibName32=xbee_lib/sch/tc1262
-[pcbnew]
-version=1
-LastNetListRead=xbee adapter.net
-UseCmpFile=1
-PadDrill=0.812800000000
-PadDrillOvalY=0.812800000000
-PadSizeH=1.524000000000
-PadSizeV=1.524000000000
-PcbTextSizeV=2.032000000000
-PcbTextSizeH=1.524000000000
-PcbTextThickness=0.304800000000
-ModuleTextSizeV=1.524000000000
-ModuleTextSizeH=1.524000000000
-ModuleTextSizeThickness=0.304800000000
-SolderMaskClearance=0.254000000000
-SolderMaskMinWidth=0.000000000000
-DrawSegmentWidth=0.381000000000
-BoardOutlineThickness=0.381000000000
-ModuleOutlineThickness=0.381000000000
-[pcbnew/libraries]
-LibDir=
-LibName1=sockets
-LibName2=connect
-LibName3=discret
-LibName4=pin_array
-LibName5=divers
-LibName6=libcms
-LibName7=display
-LibName8=valves
-LibName9=led
-LibName10=dip_sockets
-LibName11=xbee_lib/XBee/XBee
-LibName12=xbee_lib/eLab Logo/elab_kicad
