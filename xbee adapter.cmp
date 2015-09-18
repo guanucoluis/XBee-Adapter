@@ -1,79 +1,121 @@
-Cmp-Mod V01 Created by CvPcb (2012-01-19 BZR 3256)-stable date = 17/07/2013 19:13:13
+Cmp-Mod V01 Created by CvPcb (22-Jun-2014 BZR 4027)-stable date = mar 15 sep 2015 23:36:51 ART
 
 BeginCmp
-TimeStamp = /51DDE12A;
+TimeStamp = /55F8E2DA;
 Reference = C1;
-ValeurCmp = CP1;
-IdModule  = C1;
+ValeurCmp = 10u;
+IdModule  = SM1206POL;
 EndCmp
 
 BeginCmp
-TimeStamp = /51DDE126;
+TimeStamp = /55F8E2C8;
 Reference = C2;
-ValeurCmp = CP1;
-IdModule  = C1;
+ValeurCmp = 100n;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /51E1604F;
-Reference = D1;
-ValeurCmp = LED;
-IdModule  = LED-1206;
+TimeStamp = /55F8E2A8;
+Reference = C3;
+ValeurCmp = 10u;
+IdModule  = SM1206POL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F8C619;
+Reference = C4;
+ValeurCmp = C;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /51E160E5;
+Reference = D1;
+ValeurCmp = DIO0;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F7789F;
 Reference = D2;
-ValeurCmp = LED;
-IdModule  = LED-1206;
+ValeurCmp = DIO3;
+IdModule  = LED-0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /51DDDCC4;
+TimeStamp = /55F778D7;
+Reference = D3;
+ValeurCmp = ON;
+IdModule  = LED-0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F8E66B;
 Reference = P1;
-ValeurCmp = CONN_10;
-IdModule  = SIL-10;
+ValeurCmp = Vin;
+IdModule  = PIN_ARRAY_2X1;
 EndCmp
 
 BeginCmp
-TimeStamp = /51DDDCB3;
+TimeStamp = /55F779F8;
 Reference = P2;
-ValeurCmp = CONN_10;
-IdModule  = SIL-10;
+ValeurCmp = OOCD-UART;
+IdModule  = PIN_ARRAY_5x2;
 EndCmp
 
 BeginCmp
-TimeStamp = /51DDDBEE;
+TimeStamp = /55F777EA;
 Reference = R1;
-ValeurCmp = 9k;
-IdModule  = R4-LARGE_PADS;
+ValeurCmp = 10k;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /51DDDBD0;
+TimeStamp = /55F77783;
 Reference = R2;
-ValeurCmp = 16,87k;
-IdModule  = R4-LARGE_PADS;
-EndCmp
-
-BeginCmp
-TimeStamp = /51E1606B;
-Reference = R3;
-ValeurCmp = 250;
-IdModule  = R4-LARGE_PADS;
+ValeurCmp = 10k;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
 TimeStamp = /51E160E4;
-Reference = R4;
-ValeurCmp = 250;
-IdModule  = R4-LARGE_PADS;
+Reference = R3;
+ValeurCmp = 330;
+IdModule  = SM0805;
 EndCmp
 
 BeginCmp
-TimeStamp = /51DDED67;
+TimeStamp = /55F778A5;
+Reference = R4;
+ValeurCmp = 330;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F778DD;
+Reference = R5;
+ValeurCmp = 330;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F8C7F4;
+Reference = R6;
+ValeurCmp = 10k;
+IdModule  = SM0805;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F8C318;
+Reference = SW1;
+ValeurCmp = DI8;
+IdModule  = SW_PUSH_SMALL;
+EndCmp
+
+BeginCmp
+TimeStamp = /55F8E2B6;
 Reference = U1;
-ValeurCmp = LM1117-3.3;
+ValeurCmp = TC1262;
 IdModule  = SOT223;
 EndCmp
 

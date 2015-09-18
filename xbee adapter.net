@@ -1,144 +1,325 @@
-# EESchema Netlist Version 1.1 created  17/07/2013 19:13:13
-(
- ( /51DDE12A C1 C1 CP1
-  ( 1 +5V )
-  ( 2 GND )
- )
- ( /51DDE126 C1 C2 CP1
-  ( 1 +3.3V )
-  ( 2 GND )
- )
- ( /51E1604F LED-1206 D1 LED
-  ( 1 N-000020 )
-  ( 2 GND )
- )
- ( /51E160E5 LED-1206 D2 LED
-  ( 1 N-000021 )
-  ( 2 GND )
- )
- ( /51DDDCC4 SIL-10 P1 CONN_10
-  ( 1 +3.3V )
-  ( 2 N-000011 )
-  ( 3 N-000012 )
-  ( 4 N-000010 )
-  ( 5 N-000004 )
-  ( 6 N-000022 )
-  ( 7 N-000009 )
-  ( 8 +5V )
-  ( 9 N-000008 )
-  ( 10 GND )
- )
- ( /51DDDCB3 SIL-10 P2 CONN_10
-  ( 1 N-000007 )
-  ( 2 N-000005 )
-  ( 3 N-000006 )
-  ( 4 N-000018 )
-  ( 5 N-000017 )
-  ( 6 N-000023 )
-  ( 7 N-000016 )
-  ( 8 N-000015 )
-  ( 9 N-000014 )
-  ( 10 N-000013 )
- )
- ( /51DDDBEE R4-LARGE_PADS R1 9k
-  ( 1 N-000012 )
-  ( 2 N-000019 )
- )
- ( /51DDDBD0 R4-LARGE_PADS R2 16,87k
-  ( 1 N-000019 )
-  ( 2 GND )
- )
- ( /51E1606B R4-LARGE_PADS R3 250
-  ( 1 N-000022 )
-  ( 2 N-000020 )
- )
- ( /51E160E4 R4-LARGE_PADS R4 250
-  ( 1 N-000023 )
-  ( 2 N-000021 )
- )
- ( /51DDED67 SOT223 U1 LM1117-3.3
-  ( 1 GND )
-  ( 2 +3.3V )
-  ( 3 +5V )
- )
- ( /51DDD408 XBee U2 XBEE
-  ( 1 +3.3V )
-  ( 2 N-000011 )
-  ( 3 N-000019 )
-  ( 4 N-000010 )
-  ( 5 N-000004 )
-  ( 6 N-000022 )
-  ( 7 N-000009 )
-  ( 8 ? )
-  ( 9 N-000008 )
-  ( 10 GND )
-  ( 11 N-000013 )
-  ( 12 N-000014 )
-  ( 13 N-000015 )
-  ( 14 N-000016 )
-  ( 15 N-000023 )
-  ( 16 N-000017 )
-  ( 17 N-000018 )
-  ( 18 N-000006 )
-  ( 19 N-000005 )
-  ( 20 N-000007 )
- )
-)
-*
-{ Allowed footprints by component:
-$component C1
- CP*
- SM*
-$endlist
-$component C2
- CP*
- SM*
-$endlist
-$component D1
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component D2
- LED-3MM
- LED-5MM
- LED-10MM
- LED-0603
- LED-0805
- LED-1206
- LEDV
-$endlist
-$component R1
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R2
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R3
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$component R4
- R?
- SM0603
- SM0805
- R?-*
- SM1206
-$endlist
-$endfootprintlist
-}
+(export (version D)
+  (design
+    (source "/home/luis/github/XBee-Adapter/xbee adapter.sch")
+    (date "mar 15 sep 2015 23:34:17 ART")
+    (tool "eeschema (22-Jun-2014 BZR 4027)-stable"))
+  (components
+    (comp (ref D1)
+      (value DIO0)
+      (libsource (lib device) (part LED))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 51E160E5))
+    (comp (ref R3)
+      (value 330)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 51E160E4))
+    (comp (ref R2)
+      (value 10k)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F77783))
+    (comp (ref R1)
+      (value 10k)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F777EA))
+    (comp (ref D2)
+      (value DIO3)
+      (libsource (lib device) (part LED))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F7789F))
+    (comp (ref R4)
+      (value 330)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F778A5))
+    (comp (ref U2)
+      (value XBEE)
+      (libsource (lib modules_droids) (part XBEE))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 51DDD408))
+    (comp (ref D3)
+      (value ON)
+      (libsource (lib device) (part LED))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F778D7))
+    (comp (ref R5)
+      (value 330)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F778DD))
+    (comp (ref P2)
+      (value OOCD-UART)
+      (libsource (lib conn) (part CONN_5X2))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F779F8))
+    (comp (ref SW1)
+      (value DI8)
+      (libsource (lib device) (part SW_PUSH))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F8C318))
+    (comp (ref C4)
+      (value C)
+      (libsource (lib device) (part C))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F8C619))
+    (comp (ref R6)
+      (value 10k)
+      (libsource (lib device) (part R))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F8C7F4))
+    (comp (ref C3)
+      (value 10u)
+      (libsource (lib device) (part CAPAPOL))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F8E2A8))
+    (comp (ref U1)
+      (value TC1262)
+      (libsource (lib tc1262) (part TC1262))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F8E2B6))
+    (comp (ref C2)
+      (value 100n)
+      (libsource (lib device) (part C))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F8E2C8))
+    (comp (ref C1)
+      (value 10u)
+      (libsource (lib device) (part CAPAPOL))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F8E2DA))
+    (comp (ref P1)
+      (value Vin)
+      (libsource (lib conn) (part CONN_2))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 55F8E66B)))
+  (libparts
+    (libpart (lib device) (part C)
+      (description "Condensateur non polarise")
+      (footprints
+        (fp SM*)
+        (fp C?)
+        (fp C1-1))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part CP)
+      (description "Condensateur polarise")
+      (footprints
+        (fp CP*)
+        (fp SM*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CP)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part LED)
+      (footprints
+        (fp LED-3MM)
+        (fp LED-5MM)
+        (fp LED-10MM)
+        (fp LED-0603)
+        (fp LED-0805)
+        (fp LED-1206)
+        (fp LEDV))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) LED)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name A) (type passive))
+        (pin (num 2) (name K) (type passive))))
+    (libpart (lib device) (part R)
+      (description Resistance)
+      (footprints
+        (fp R?)
+        (fp SM0603)
+        (fp SM0805)
+        (fp R?-*)
+        (fp SM1206))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib device) (part SW_PUSH)
+      (description "Push Button")
+      (fields
+        (field (name Reference) SW)
+        (field (name Value) SW_PUSH)
+        (field (name Footprint) ~)
+        (field (name Datasheet) ~))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
+    (libpart (lib conn) (part CONN_2)
+      (description "Symbole general de connecteur")
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_2))
+      (pins
+        (pin (num 1) (name P1) (type passive))
+        (pin (num 2) (name PM) (type passive))))
+    (libpart (lib conn) (part CONN_5X2)
+      (description "Symbole general de connecteur")
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_5X2))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))
+        (pin (num 3) (name ~) (type passive))
+        (pin (num 4) (name ~) (type passive))
+        (pin (num 5) (name ~) (type passive))
+        (pin (num 6) (name ~) (type passive))
+        (pin (num 7) (name ~) (type passive))
+        (pin (num 8) (name ~) (type passive))
+        (pin (num 9) (name ~) (type passive))
+        (pin (num 10) (name ~) (type passive))))
+    (libpart (lib modules_droids) (part XBEE)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) XBEE))
+      (pins
+        (pin (num 1) (name Vcc) (type power_in))
+        (pin (num 2) (name DOUT) (type output))
+        (pin (num 3) (name DIN/~CONFIG) (type input))
+        (pin (num 4) (name DO8) (type output))
+        (pin (num 5) (name ~RESET) (type passive))
+        (pin (num 6) (name PWM0/RSSI) (type output))
+        (pin (num 7) (name PWM1) (type passive))
+        (pin (num 8) (name NC) (type passive))
+        (pin (num 9) (name ~DTR~/SLEEP_RQ/DI8) (type input))
+        (pin (num 10) (name GND) (type power_in))
+        (pin (num 11) (name AD4/DIO4) (type passive))
+        (pin (num 12) (name ~CTS~/DIO7) (type passive))
+        (pin (num 13) (name ON/~SLEEP) (type output))
+        (pin (num 14) (name VREF) (type input))
+        (pin (num 15) (name ASS/AD5/DIO5) (type passive))
+        (pin (num 16) (name ~RTS~/AD6/DIO6) (type passive))
+        (pin (num 17) (name AD3/DIO3) (type passive))
+        (pin (num 18) (name AD2/DIO2) (type passive))
+        (pin (num 19) (name AD1/DIO1) (type passive))
+        (pin (num 20) (name AD0/DIO0) (type passive))))
+    (libpart (lib tc1262) (part TC1262)
+      (fields
+        (field (name Reference) U)
+        (field (name Value) TC1262))
+      (pins
+        (pin (num 1) (name VI) (type input))
+        (pin (num 2) (name GND) (type input))
+        (pin (num 3) (name VO) (type power_out)))))
+  (libraries
+    (library (logical device)
+      (uri /usr/share/kicad/library/device.lib))
+    (library (logical conn)
+      (uri /usr/share/kicad/library/conn.lib))
+    (library (logical tc1262)
+      (uri xbee_lib/sch/tc1262.lib))
+    (library (logical modules_droids)
+      (uri xbee_lib/module_droids/modules_droids.lib)))
+  (nets
+    (net (code 1) (name +3.3V)
+      (node (ref R2) (pin 1))
+      (node (ref R1) (pin 1))
+      (node (ref P2) (pin 10))
+      (node (ref U1) (pin 3))
+      (node (ref C3) (pin 1))
+      (node (ref C2) (pin 1))
+      (node (ref U2) (pin 1))
+      (node (ref R6) (pin 1)))
+    (net (code 2) (name GND)
+      (node (ref U2) (pin 10))
+      (node (ref D2) (pin 2))
+      (node (ref C3) (pin 2))
+      (node (ref D1) (pin 2))
+      (node (ref D3) (pin 2))
+      (node (ref C2) (pin 2))
+      (node (ref U1) (pin 2))
+      (node (ref C4) (pin 1))
+      (node (ref SW1) (pin 2))
+      (node (ref P2) (pin 9))
+      (node (ref C1) (pin 2))
+      (node (ref P1) (pin 2)))
+    (net (code 3) (name "")
+      (node (ref P2) (pin 7)))
+    (net (code 4) (name "")
+      (node (ref U2) (pin 7)))
+    (net (code 5) (name DIN)
+      (node (ref R2) (pin 2))
+      (node (ref P2) (pin 1))
+      (node (ref U2) (pin 3)))
+    (net (code 6) (name DOUT)
+      (node (ref U2) (pin 2))
+      (node (ref P2) (pin 2)))
+    (net (code 7) (name ~RTS)
+      (node (ref P2) (pin 3))
+      (node (ref U2) (pin 16)))
+    (net (code 8) (name ~CTS)
+      (node (ref U2) (pin 12))
+      (node (ref P2) (pin 4)))
+    (net (code 9) (name "")
+      (node (ref P2) (pin 5)))
+    (net (code 10) (name "")
+      (node (ref P2) (pin 6)))
+    (net (code 11) (name "")
+      (node (ref P2) (pin 8)))
+    (net (code 12) (name "")
+      (node (ref U2) (pin 9))
+      (node (ref C4) (pin 2))
+      (node (ref SW1) (pin 1))
+      (node (ref R6) (pin 2)))
+    (net (code 13) (name "")
+      (node (ref P1) (pin 1))
+      (node (ref C1) (pin 1))
+      (node (ref U1) (pin 1)))
+    (net (code 14) (name "")
+      (node (ref U2) (pin 6)))
+    (net (code 15) (name "")
+      (node (ref U2) (pin 4)))
+    (net (code 16) (name "")
+      (node (ref U2) (pin 5))
+      (node (ref R1) (pin 2)))
+    (net (code 17) (name "")
+      (node (ref R3) (pin 1))
+      (node (ref U2) (pin 20)))
+    (net (code 18) (name "")
+      (node (ref D1) (pin 1))
+      (node (ref R3) (pin 2)))
+    (net (code 19) (name "")
+      (node (ref U2) (pin 8)))
+    (net (code 20) (name "")
+      (node (ref U2) (pin 19)))
+    (net (code 21) (name "")
+      (node (ref U2) (pin 18)))
+    (net (code 22) (name "")
+      (node (ref U2) (pin 15)))
+    (net (code 23) (name "")
+      (node (ref U2) (pin 14)))
+    (net (code 24) (name "")
+      (node (ref U2) (pin 11)))
+    (net (code 25) (name "")
+      (node (ref R5) (pin 2))
+      (node (ref D3) (pin 1)))
+    (net (code 26) (name "")
+      (node (ref R5) (pin 1))
+      (node (ref U2) (pin 13)))
+    (net (code 27) (name "")
+      (node (ref R4) (pin 2))
+      (node (ref D2) (pin 1)))
+    (net (code 28) (name "")
+      (node (ref R4) (pin 1))
+      (node (ref U2) (pin 17)))))
